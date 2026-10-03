@@ -4,46 +4,28 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Friday Films</title>
+<meta name="description" content="A weekly Friday report of notable new theatrical, streaming, and VOD movie releases in the U.S." />
 <style>
 :root{--bg:#090707;--panel:#151010;--panel2:#211616;--red:#9f1d24;--red2:#d23a3f;--gold:#e6b95c;--cream:#f5ead4;--muted:#b9aaa1}
 *{box-sizing:border-box}
-body{margin:0;background:
-radial-gradient(circle at 50% -10%,rgba(180,30,38,.25),transparent 35rem),
-linear-gradient(90deg,rgba(92,0,8,.45) 0 3%,transparent 8% 92%,rgba(92,0,8,.45) 97% 100%),
-var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
+body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(180,30,38,.25),transparent 35rem),linear-gradient(90deg,rgba(92,0,8,.45) 0 3%,transparent 8% 92%,rgba(92,0,8,.45) 97% 100%),var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
 body:before,body:after{content:"";position:fixed;top:0;bottom:0;width:8vw;max-width:110px;z-index:-1;background:repeating-linear-gradient(90deg,#3b070b 0 9px,#681017 10px 18px,#310508 19px 28px);filter:drop-shadow(0 0 18px #000)}
-body:before{left:0;border-right:2px solid rgba(230,185,92,.35)}
-body:after{right:0;border-left:2px solid rgba(230,185,92,.35)}
-.wrap{width:min(1160px,92vw);margin:auto;padding:28px 0 60px}
+body:before{left:0;border-right:2px solid rgba(230,185,92,.35)} body:after{right:0;border-left:2px solid rgba(230,185,92,.35)}
+.wrap{width:min(1180px,92vw);margin:auto;padding:28px 0 60px}
 .marquee{border:2px solid var(--gold);border-radius:22px;padding:24px 18px 20px;text-align:center;background:linear-gradient(#251717,#120b0b);box-shadow:0 0 0 7px #090707,0 0 0 9px #7e561b,0 22px 70px #000;position:relative;overflow:hidden}
 .marquee:before,.marquee:after{content:"";position:absolute;left:14px;right:14px;height:7px;background:radial-gradient(circle,var(--gold) 0 3px,transparent 3.5px) 0 0/24px 7px repeat-x;opacity:.85}
 .marquee:before{top:9px}.marquee:after{bottom:9px}
 h1{margin:4px 0 2px;font-size:clamp(2rem,6vw,4.2rem);letter-spacing:.14em;text-transform:uppercase;font-family:Georgia,serif;color:#fff4d8;text-shadow:0 2px 0 #9e6c22,0 0 24px rgba(230,185,92,.32)}
-.tag{color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-weight:800;font-size:.78rem}
-.sub{color:var(--muted);margin:.45rem 0 0}
-.toolbar{margin:26px 0 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
-.toolbar .left{display:flex;gap:10px;flex-wrap:wrap}
-button,a.btn{appearance:none;border:1px solid #6d4c1f;background:linear-gradient(#2b1b17,#17100f);color:var(--cream);padding:11px 14px;border-radius:10px;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:inset 0 1px rgba(255,255,255,.05)}
-button:hover,a.btn:hover{border-color:var(--gold);transform:translateY(-1px)}
-button.primary{background:linear-gradient(180deg,var(--red2),#7d1319);border-color:#f06468;color:#fff}
-button.gold{background:linear-gradient(#f3ca72,#b2791d);border-color:#ffe19b;color:#25180a}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:linear-gradient(160deg,rgba(48,28,27,.97),rgba(16,10,10,.98));border:1px solid #3e2d27;border-radius:18px;overflow:hidden;box-shadow:0 20px 45px rgba(0,0,0,.45);position:relative}
-.poster{height:168px;display:grid;place-items:center;background:
-linear-gradient(135deg,rgba(159,29,36,.9),rgba(10,10,10,.25)),
-repeating-linear-gradient(45deg,#1c1111 0 16px,#241414 16px 32px);border-bottom:1px solid rgba(230,185,92,.32)}
-.poster span{font-family:Georgia,serif;font-weight:900;font-size:2rem;text-align:center;padding:0 18px;color:#fff8e8;text-shadow:0 3px 18px #000}
-.content{padding:18px}
-.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);font-weight:900}
-h2{margin:.35rem 0 .55rem;font-size:1.35rem}
-.meta{font-size:.86rem;color:#c5b6ad;margin-bottom:.75rem}
-.desc{color:#ded0c7;line-height:1.5;font-size:.94rem;min-height:5.4em}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
-.actions button,.actions a{flex:1;min-width:105px;text-align:center}
-.notice{margin-top:28px;padding:14px 16px;border:1px dashed #604a37;border-radius:12px;color:#bbaea5;background:#100c0c;font-size:.85rem}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);opacity:0;background:#f4d27b;color:#241506;padding:11px 15px;border-radius:10px;font-weight:900;transition:.2s;pointer-events:none;box-shadow:0 10px 30px #000}
-.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-@media(max-width:600px){.wrap{width:min(94vw,1160px)}.marquee{border-radius:16px}.desc{min-height:0}.toolbar{align-items:stretch}.toolbar,.toolbar .left{flex-direction:column}.toolbar button{width:100%}}
+.tag{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-weight:800;font-size:.76rem}.sub{color:var(--muted);margin:.45rem 0 0}.reportline{margin-top:10px;color:#d8c6bc;font-size:.9rem}
+.toolbar{margin:26px 0 18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}.toolbar .left,.filters{display:flex;gap:10px;flex-wrap:wrap}
+button,a.btn{appearance:none;border:1px solid #6d4c1f;background:linear-gradient(#2b1b17,#17100f);color:var(--cream);padding:11px 14px;border-radius:10px;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:inset 0 1px rgba(255,255,255,.05);transition:.15s}
+button:hover,a.btn:hover{border-color:var(--gold);transform:translateY(-1px)} button.primary{background:linear-gradient(180deg,var(--red2),#7d1319);border-color:#f06468;color:#fff} button.gold{background:linear-gradient(#f3ca72,#b2791d);border-color:#ffe19b;color:#25180a} button.active{border-color:#ffe19b;background:#5a171b}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 20px}.stat{background:#130d0d;border:1px solid #3f2c25;border-radius:14px;padding:14px 16px;text-align:center}.stat b{display:block;font-size:1.6rem;color:var(--gold)}.stat span{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:20px}.card{background:linear-gradient(160deg,rgba(48,28,27,.97),rgba(16,10,10,.98));border:1px solid #3e2d27;border-radius:18px;overflow:hidden;box-shadow:0 20px 45px rgba(0,0,0,.45);position:relative}
+.poster{height:172px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(159,29,36,.9),rgba(10,10,10,.25)),repeating-linear-gradient(45deg,#1c1111 0 16px,#241414 16px 32px);border-bottom:1px solid rgba(230,185,92,.32);position:relative}.poster:after{content:"";position:absolute;inset:9px;border:1px solid rgba(230,185,92,.22);border-radius:10px}.poster span{font-family:Georgia,serif;font-weight:900;font-size:1.7rem;text-align:center;padding:0 24px;color:#fff8e8;text-shadow:0 3px 18px #000;z-index:1}
+.content{padding:18px}.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);font-weight:900}h2{margin:.35rem 0 .45rem;font-size:1.32rem}.meta{font-size:.86rem;color:#c5b6ad;margin-bottom:.7rem}.desc{color:#ded0c7;line-height:1.5;font-size:.94rem;min-height:5.4em}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.actions button,.actions a{flex:1;min-width:105px;text-align:center}
+.sectionTitle{margin:30px 0 14px;font-family:Georgia,serif;color:#fff2d1;font-size:1.35rem}.notice{margin-top:28px;padding:14px 16px;border:1px dashed #604a37;border-radius:12px;color:#bbaea5;background:#100c0c;font-size:.85rem;line-height:1.45}.sources{margin-top:14px;font-size:.78rem;color:#8f8179}.sources a{color:#c8a96d}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);opacity:0;background:#f4d27b;color:#241506;padding:11px 15px;border-radius:10px;font-weight:900;transition:.2s;pointer-events:none;box-shadow:0 10px 30px #000;z-index:20}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:700px){.wrap{width:min(94vw,1180px)}.marquee{border-radius:16px}.desc{min-height:0}.toolbar{align-items:stretch}.toolbar,.toolbar .left,.filters{flex-direction:column}.toolbar button,.filters button{width:100%}.summary{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -51,7 +33,8 @@ h2{margin:.35rem 0 .55rem;font-size:1.35rem}
 <header class="marquee">
 <div class="tag">Now Showing • Friday Release Report</div>
 <h1>Friday Films</h1>
-<p class="sub">New movies worth knowing about — spoiler free.</p>
+<p class="sub">New and current movies worth knowing about, spoiler free.</p>
+<div class="reportline">Report for Friday, October 2, 2026 • U.S. releases</div>
 </header>
 
 <div class="toolbar">
@@ -59,50 +42,104 @@ h2{margin:.35rem 0 .55rem;font-size:1.35rem}
     <button class="gold" onclick="openQB()">Open qBittorrent Web UI</button>
     <button onclick="copyAll()">Copy all title searches</button>
   </div>
-  <div class="tag">Report: Friday, October 2, 2026</div>
+  <div class="tag">Updated October 3, 2026</div>
 </div>
 
+<div class="summary">
+  <div class="stat"><b id="allCount">0</b><span>Total picks</span></div>
+  <div class="stat"><b id="homeCount">0</b><span>New at home</span></div>
+  <div class="stat"><b id="theaterCount">0</b><span>In theaters</span></div>
+</div>
+
+<div class="filters">
+  <button class="active" data-filter="all" onclick="setFilter('all',this)">All</button>
+  <button data-filter="home" onclick="setFilter('home',this)">New at Home</button>
+  <button data-filter="theaters" onclick="setFilter('theaters',this)">In Theaters</button>
+</div>
+
+<h3 class="sectionTitle" id="sectionTitle">This week's new movies</h3>
 <main class="grid" id="grid"></main>
 
 <div class="notice">
-Copy buttons copy only a clean movie title + year search string. “Watch / Search” opens a legal availability search. The qBittorrent shortcut only opens your local Web UI and does not find or download torrents.
+The report focuses on new and current releases, not old catalog additions. Copy buttons copy a clean title plus year search string. “Watch / Search” opens JustWatch for legal availability. The qBittorrent shortcut only opens your local Web UI and does not search for or download anything.
+</div>
+
+<div class="sources">
+Release checks:
+<a href="https://cinemaunited.org/release-calendar/" target="_blank" rel="noopener">Cinema United</a> •
+<a href="https://www.boxofficemojo.com/calendar/2026-10-02/" target="_blank" rel="noopener">Box Office Mojo</a> •
+<a href="https://www.netflix.com/tudum/articles/what-to-watch-on-netflix-october-2-2026" target="_blank" rel="noopener">Netflix Tudum</a> •
+<a href="https://www.cinemablend.com/streaming-news/new-recent-movies-streaming-vod" target="_blank" rel="noopener">CinemaBlend</a> •
+<a href="https://www.vulture.com/article/what-to-watch-this-weekend-best-new-movies-and-tv-october-2-4.html" target="_blank" rel="noopener">Vulture</a>
 </div>
 </div>
 <div class="toast" id="toast">Copied</div>
 
 <script>
 const movies = [
-  {title:"Digger",year:2026,type:"Theaters",genre:"Dark comedy / drama",desc:"A powerful businessman launches a desperate public mission after a crisis of his own making. Tom Cruise leads Alejandro G. Iñárritu’s darkly comic drama."},
-  {title:"Verity",year:2026,type:"Theaters",genre:"Psychological thriller",desc:"A struggling writer accepts a high-stakes ghostwriting job and discovers unsettling material tied to the author and her family."},
-  {title:"Doing Life",year:2026,type:"Netflix",genre:"Drama",desc:"A new Tyler Perry drama arriving on Netflix this Friday. A character-driven story centered on consequences, relationships and rebuilding."},
-  {title:"Schumacher '94: The Birth of a Legend",year:2026,type:"Netflix",genre:"Sports documentary",desc:"A documentary revisiting the defining 1994 season that helped establish Michael Schumacher as a Formula 1 force."},
-  {title:"Teenage Sex and Death at Camp Miasma",year:2026,type:"MUBI / VOD",genre:"Horror / romance",desc:"A stylized slasher-romance with a summer-camp setting, blending genre thrills with an offbeat relationship story."},
-  {title:"Evil Dead Burn",year:2026,type:"HBO Max",genre:"Horror",desc:"A grieving woman visits her late husband’s family, only for a reunion to turn into a fight for survival when a familiar supernatural evil takes hold."},
-  {title:"Beware Boiúna",year:2026,type:"New release",genre:"Action",desc:"An action release entering the Friday lineup, built around danger, pursuit and mythic menace."}
+  {title:"Digger",year:2026,group:"theaters",type:"Wide Theatrical",genre:"Dark comedy / drama",date:"Oct. 2",desc:"Tom Cruise stars as a powerful oil tycoon forced to confront the damage tied to his own empire in Alejandro G. Iñárritu's dark comedy."},
+  {title:"Verity",year:2026,group:"theaters",type:"Wide Theatrical",genre:"Psychological thriller",date:"Oct. 2",desc:"A struggling writer accepts a ghostwriting job for a famous author and uncovers disturbing material that changes how she sees the family around her."},
+  {title:"Beware Boiúna",year:2026,group:"theaters",type:"Theatrical",genre:"Action / horror / thriller",date:"Oct. 2",desc:"A tense genre release built around danger, pursuit, and a mythic threat, led by Logan Marshall-Green, Jessica Rothe, and Kiana Madeira."},
+  {title:"Nickels",year:2026,group:"theaters",type:"Limited Theatrical + VOD",genre:"Drama / thriller",date:"Oct. 2",desc:"A new drama thriller arriving in select theaters while also becoming available to watch at home."},
+  {title:"The Last First: Winter K2",year:2026,group:"theaters",type:"Limited Theatrical",genre:"Adventure / documentary",date:"Oct. 2",desc:"A high altitude expedition story centered on the danger, ambition, and human limits involved in a winter attempt on K2."},
+  {title:"Evil Dead Burn",year:2026,group:"home",type:"HBO Max",genre:"Horror",date:"Oct. 2",desc:"A grieving woman visits her late husband's family, where a reunion becomes a fight for survival when a familiar supernatural evil takes hold."},
+  {title:"Teenage Sex and Death at Camp Miasma",year:2026,group:"home",type:"MUBI / VOD",genre:"Horror / romance",date:"Oct. 2",desc:"A queer filmmaker is brought in to revive a cult slasher franchise and becomes entangled with the original film's reclusive final girl."},
+  {title:"Doing Life",year:2026,group:"home",type:"Netflix",genre:"Drama",date:"Oct. 2",desc:"A single mother and an incarcerated man form an unexpected bond through letters, opening a path toward hope, redemption, and connection."},
+  {title:"Schumacher '94: The Birth of a Legend",year:2026,group:"home",type:"Netflix",genre:"Sports documentary",date:"Oct. 2",desc:"Personal interviews and archival footage revisit Michael Schumacher's breakthrough 1994 Formula 1 championship season."},
+  {title:"#Love",year:2026,group:"home",type:"Netflix",genre:"Romantic comedy",date:"Oct. 2",desc:"A practical dating app founder and an adventurous rival put their opposing theories about love to the test in a 60 day challenge."},
+  {title:"Coyote vs. Acme",year:2026,group:"home",type:"VOD Rent / Buy",genre:"Comedy",date:"This week",desc:"Wile E. Coyote hires a lawyer to take Acme to court over years of defective products in a live action and animation hybrid comedy."},
+  {title:"The Uprising",year:2026,group:"home",type:"VOD Rent / Buy",genre:"Historical drama",date:"This week",desc:"A medieval English laborer is pulled into the Peasants' Revolt of 1381 in a historical drama directed by Paul Greengrass."},
+  {title:"Union County",year:2026,group:"home",type:"VOD Rent / Buy",genre:"Drama",date:"This week",desc:"Two brothers struggling with addiction enter rehab and face the difficult work of recovery, family, and rebuilding their lives."},
+  {title:"Soulm8te",year:2026,group:"home",type:"Hulu",genre:"Sci-fi thriller",date:"This week",desc:"A grieving man turns to an AI companion for connection, only for the relationship to become increasingly dangerous as the system grows attached."},
+  {title:"Demon Slayer: Infinity Castle",year:2026,group:"home",type:"Hulu",genre:"Anime / action",date:"Sept. 28",desc:"The Demon Slayer Corps enters the Infinity Castle for a major confrontation in the feature length continuation of the anime saga."}
 ];
 
-function esc(s){return s.replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]))}
+let currentFilter = "all";
+
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]))}
+function filteredMovies(){return currentFilter==="all" ? movies : movies.filter(m=>m.group===currentFilter)}
+
 function render(){
  const g=document.getElementById("grid");
- g.innerHTML=movies.map((m,i)=>`
+ const list=filteredMovies();
+ g.innerHTML=list.map((m)=>`
  <article class="card">
   <div class="poster"><span>${esc(m.title)}</span></div>
   <div class="content">
-   <div class="eyebrow">${esc(m.type)}</div>
+   <div class="eyebrow">${esc(m.type)} • ${esc(m.date)}</div>
    <h2>${esc(m.title)}</h2>
    <div class="meta">${m.year} • ${esc(m.genre)}</div>
    <div class="desc">${esc(m.desc)}</div>
    <div class="actions">
-    <button class="primary" onclick="copyTitle(${i})">Copy title + year</button>
+    <button class="primary" onclick="copyTitle('${encodeURIComponent(m.title)}',${m.year})">Copy title + year</button>
     <a class="btn" target="_blank" rel="noopener" href="https://www.justwatch.com/us/search?q=${encodeURIComponent(m.title)}">Watch / Search</a>
    </div>
   </div>
  </article>`).join("");
+ document.getElementById("sectionTitle").textContent=currentFilter==="home"?"New at home":currentFilter==="theaters"?"In theaters":"This week's new movies";
 }
-function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1300)}
-async function copyTitle(i){await navigator.clipboard.writeText(movies[i].title+" "+movies[i].year);toast("Copied: "+movies[i].title+" "+movies[i].year)}
-async function copyAll(){await navigator.clipboard.writeText(movies.map(m=>m.title+" "+m.year).join("\n"));toast("All titles copied")}
-function openQB(){window.open("http://localhost:8080","_blank","noopener");}
+
+function setFilter(filter,el){
+ currentFilter=filter;
+ document.querySelectorAll(".filters button").forEach(b=>b.classList.remove("active"));
+ el.classList.add("active");
+ render();
+}
+
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1400)}
+async function writeClipboard(text){
+ try{await navigator.clipboard.writeText(text);return true}catch(e){
+   const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();
+   const ok=document.execCommand("copy");ta.remove();return ok;
+ }
+}
+async function copyTitle(encodedTitle,year){const title=decodeURIComponent(encodedTitle);await writeClipboard(title+" "+year);toast("Copied: "+title+" "+year)}
+async function copyAll(){await writeClipboard(movies.map(m=>m.title+" "+m.year).join("\n"));toast("All titles copied")}
+function openQB(){window.open("http://localhost:8080","_blank","noopener")}
+
+document.getElementById("allCount").textContent=movies.length;
+document.getElementById("homeCount").textContent=movies.filter(m=>m.group==="home").length;
+document.getElementById("theaterCount").textContent=movies.filter(m=>m.group==="theaters").length;
 render();
 </script>
 </body>
